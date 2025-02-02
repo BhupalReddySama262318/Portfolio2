@@ -137,6 +137,7 @@
     const ssScrollSpy = function () {
 
         const sections = document.querySelectorAll(".target-section");
+        const headerHeight = document.querySelector('.s-header').offsetHeight;
 
         // Add an event listener listening for scroll
         window.addEventListener("scroll", navHighlight);
@@ -146,11 +147,10 @@
             // Get current scroll position
             let scrollY = window.pageYOffset;
 
-            // Loop through sections to get height(including padding and border), 
-            // top and ID values for each
+            // Loop through sections to get height, top and ID values
             sections.forEach(function (current) {
                 const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 50;
+                const sectionTop = current.offsetTop - headerHeight - 50; // Added header height offset
                 const sectionId = current.getAttribute("id");
 
                 /* If our current scroll position enters the space where current section 
