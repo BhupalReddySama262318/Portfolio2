@@ -3,7 +3,7 @@
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript. This portfolio showcases my skills, projects, and professional experience with a clean and minimalist design.
 
 ## Live Demo
-[View Live Demo](https://bhupalreddysama262318.github.io/portfolio/) 
+[View Live Demo](https://bhupalreddysama262318.github.io/Portfolio2/) 
 
 ## Features
 
